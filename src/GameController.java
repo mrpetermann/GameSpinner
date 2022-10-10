@@ -1,4 +1,4 @@
-public class Main {
+public class GameController {
     public static void main(String[] a) {
         GameSpinner spinner = new GameSpinner(4);
         System.out.println(spinner.spin());
