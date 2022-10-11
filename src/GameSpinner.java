@@ -19,6 +19,8 @@ public class GameSpinner {
          **/
         currentRun = (spin == lastSpin) ? currentRun + 1 : 1;
 
+        lastSpin = spin; //!!!!
+
         return spin;
     }
 
