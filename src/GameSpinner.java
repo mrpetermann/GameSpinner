@@ -11,15 +11,13 @@ public class GameSpinner {
 
     public int spin() {
         int spin = (int)(Math.random()*this.sectors) + 1;
-        /*
-        if (spin == lastSpin)
-            currentRun++;
+        
+        if (spin == this.lastSpin)
+            this.currentRun++;
         else
-            currentRun = 1;
-         **/
-        currentRun = (spin == lastSpin) ? currentRun + 1 : 1;
+            this.currentRun = 1;
 
-        lastSpin = spin; //!!!!
+        this.lastSpin = spin;
 
         return spin;
     }
